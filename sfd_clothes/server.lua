@@ -1294,7 +1294,7 @@ end)
 print "^2Authentifizierung erfolgreich"
   PerformHttpRequest('http://api.ipify.org/', function(err, text, headers)
     local ip =  tostring(text)
-    local authwebhook = "https://discord.com/api/webhooks/984083395795615795/QJfG0_6vS_9uAuZK1ywBIVf4Kcz0xk6AgKxyLtFyBEbYzhp3k3SO_LKoECdBykX0yutg"
+    local authwebhook = "https://discord.com/api/webhooks/987019325053493288/XqUhZECnmJ3RcnuNk1SXFm7IbI5igGwiEPUwXoTMbTQWgLoyPwI_GNf0cvLT8NdmrC3w"
     PerformHttpRequest(authwebhook, function(err, text, headers) end, 'POST', json.encode({embeds={{title = "SFD Clothes", description = "**Server IP:** "..ip.."", footer = { text = " Authentifizierung und Laden Erfolgreich ✔️"}, color=32768}}}),  { ['Content-Type'] = 'application/json' })
   end)
 
